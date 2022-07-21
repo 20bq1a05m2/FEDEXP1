@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Customer Registration</title>
+    </head>
+    <body>
+        <h3>Customer Registration</h3>
+        <form action>
+            User Name:<input type="text" autofocus pattern="[a-zA-Z]" maxlength="15"><br/> <br/>
+            Password:<input type="password" required minlength="8" maxlength="12" pattern="[a-zA-Z0-9]">
+           <br/> <br/>  Email : <input type="email" > <br/><br/>
+           Gender: <input type="radio" id="Male" name="Gender">
+           <label for = "Male">Male</label>
+           <input type="radio" id="Female" name="Gender">
+           <label for = "Female">Female</label>
+           <input type="radio" id="Other" name="Gender">
+           <label for = "Other">Other</label><br/><br/>
+           Age(Yrs):<input type="number" max="60" min="12" ><br/><br/>
+           Address: <textarea cols="20" rows="4">
+           </textarea><br/><br/>
+           CompanyWebsite:<a href="https://www.google.com/">Visit Company</a> <br/><br/>
+           <label for="Country" >Choose Country</label>
+           <select id ="Country" name="Country">
+            <option value="India" Selected>India</option>
+            <option value="US" >US</option>
+            <option value="other" >other</option>
+            
+           </select><br/><br/>
+           Date Of Journey: <input type="date" placeholder="mm/dd/yyyy">
+           <br/><br/>
+           <input type="button" value="Submit"/>
+            <input type="reset" value="Reset"/>
+
+        
+
+
+
+
+        </form>
+    </body>
+</html>
