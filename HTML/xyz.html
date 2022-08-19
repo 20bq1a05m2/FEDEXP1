@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>XYZ University Registration</title>
+    </head>
+    <style>
+        .required:after{
+            content:"*";
+            color:red;
+        }
+    </style>
+    <body>
+        <center>
+        <h3>XYZ University Registration</h3>
+        <form action>
+            <label class="required"></label>
+            First Name:<input type="text" required pattern="[a-zA-Z]" maxlength="10"><br/><br/>
+            <label class="required"></label>
+            Last Name:<input type="text" required  maxlength="10" pattern="[a-zA-Z]"><br/><br/>
+            <label class="required"></label>
+            Date Of birth: <input type="date" placeholder="mm/dd/yyyy" required>
+           <br/> <br/> 
+           Gender: <input type="radio" id="Male" name="Gender">
+           <label for = "Male">Male</label>
+           <input type="radio" id="Female" name="Gender">
+           <label for = "Female">Female</label>
+           <input type="radio" id="Other" name="Gender">
+           <label for = "Other">Other</label><br/><br/>
+           <label for="Degree" >Degree</label>
+           <select id ="Degree" name="Degree">
+            <option value="India" >Bachelors</option>
+            <option value="US" >Masters</option>
+            <option value="other" >Doctorate</option>
+            
+           </select><br/><br/>
+           <label class="required"></label>Specialization: <input type="text" required maxlength="40"><br/><br/>
+           Current GPA: <input type="number" max="5" step="0.11">
+          <br/><br/> Address: <textarea cols="20" rows="4" maxlength="160">
+           </textarea><br/><br/>
+           <label class="required"></label>Phone Number: <input type="tel" required " /><br/><br/>
+           <input type="button" value="Submit"/>
+            <input type="reset" value="Reset"/>
+
+        
+
+
+
+
+        </form>
+    </center>
+    </body>
+</html>
